@@ -1,0 +1,66 @@
+body,
+td,
+a,
+p,
+.h {
+  font-family: arial, sans-serif;
+  font-size: small;
+}
+
+.main-div {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  background-color: antiquewhite;
+  height: 100%;
+  width: 100%;
+}
+
+.nav {
+  position: relative;
+  background-color: aquamarine;
+  flex: 1;
+  display: flex;
+}
+
+.nav-left {
+  flex: 1;
+}
+
+.nav-right {
+  background-color: indianred;
+  flex: 1;
+}
+
+.logo {
+  position: relative;
+  top: 40%;
+}
+
+.image {
+  background-color: blueviolet;
+  max-width: 100%;
+  height: auto;
+  text-align: -webkit-center;
+  flex: 5;
+}
+
+.search-bar {
+  background-color: cadetblue;
+  flex: 1;
+}
+
+.two-buttons {
+  background-color: chocolate;
+  flex: 1;
+}
+
+.blank-space {
+  background-color: darkgray;
+  flex: 5;
+}
+
+.bottom-div {
+  background-color: darksalmon;
+  flex: 1;
+}
