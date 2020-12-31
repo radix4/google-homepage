@@ -7,18 +7,23 @@ p,
   font-size: small;
 }
 
+a {
+  text-decoration: none;
+  color: #000;
+  opacity: 0.75;
+}
+
 .main-div {
   position: absolute;
   display: flex;
   flex-direction: column;
-  background-color: antiquewhite;
   height: 100%;
   width: 100%;
 }
 
 .nav {
   position: relative;
-  background-color: aquamarine;
+  padding-top: 10px;
   flex: 1;
   display: flex;
 }
@@ -27,20 +32,28 @@ p,
   flex: 1;
 }
 
+.nav-left-links {
+  padding-left: 15px;
+}
+
 .nav-right {
-  background-color: indianred;
   flex: 1;
+  text-align: right;
+}
+
+.nav-right-links {
+  padding-right: 15px;
 }
 
 .logo {
   position: relative;
   top: 40%;
+  max-width: 100%;
+  height: auto;
 }
 
 .image {
   background-color: blueviolet;
-  max-width: 100%;
-  height: auto;
   text-align: -webkit-center;
   flex: 5;
 }
@@ -63,4 +76,21 @@ p,
 .bottom-div {
   background-color: darksalmon;
   flex: 1;
+}
+
+.apps-logo {
+  max-width: 22px;
+  height: auto;
+}
+
+.apps-logo:hover {
+  cursor: pointer;
+}
+
+.profile-logo {
+  position: relative;
+  height: 30px;
+  width: 45px;
+  border-radius: 50%;
+  opacity: 1;
 }
