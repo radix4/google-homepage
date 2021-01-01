@@ -10,7 +10,6 @@ p,
 a {
   text-decoration: none;
   color: #000;
-  opacity: 0.75;
 }
 
 .main-div {
@@ -23,13 +22,14 @@ a {
 
 .nav {
   position: relative;
-  padding-top: 10px;
   flex: 1;
   display: flex;
 }
 
 .nav-left {
   flex: 1;
+  display: flex;
+  align-items: center;
 }
 
 .nav-left-links {
@@ -38,11 +38,17 @@ a {
 
 .nav-right {
   flex: 1;
-  text-align: right;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }
 
-.nav-right-links {
+.nav-right-gmail {
   padding-right: 15px;
+}
+
+.nav-right-images {
+  padding-right: 20px;
 }
 
 .logo {
@@ -78,19 +84,26 @@ a {
   flex: 1;
 }
 
-.apps-logo {
-  max-width: 22px;
-  height: auto;
-}
-
 .apps-logo:hover {
   cursor: pointer;
 }
 
-.profile-logo {
+.apps-logo {
   position: relative;
-  height: 30px;
-  width: 45px;
+  height: 20px;
+  width: 20px;
+  padding-right: 35px;
+}
+
+#profile-logo {
+  position: relative;
+  height: 32px;
+  width: 32px;
+  opacity: 1 !important;
+  right: 20px;
   border-radius: 50%;
-  opacity: 1;
+}
+
+#profile-logo:hover {
+  cursor: pointer;
 }
