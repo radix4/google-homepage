@@ -7,6 +7,10 @@ p,
   font-size: small;
 }
 
+div {
+  border: 1px #ccc solid;
+}
+
 a {
   text-decoration: none;
   color: #000;
@@ -51,36 +55,62 @@ a {
   padding-right: 20px;
 }
 
-.logo {
-  position: relative;
-  top: 40%;
-  max-width: 100%;
-  height: auto;
+.blank {
+  flex: 2;
 }
 
 .image {
-  background-color: blueviolet;
   text-align: -webkit-center;
-  flex: 5;
+  flex: 2;
+  display: flex;
+  align-self: center;
 }
 
+.logo {
+  height: 100px;
+  width: 300px;
+}
 .search-bar {
-  background-color: cadetblue;
-  flex: 1;
+  flex: 0.1;
+  align-self: center;
+  display: flex;
+  border-radius: 50px 50px;
+  border: 1px #ccc solid;
+}
+
+.search-bar form {
+  position: relative;
+  display: block;
+  height: auto;
+  width: 600px;
+}
+
+.search-bar form input {
+  align-self: center;
+  height: 75%;
+  width: 80%;
+  border: none;
+}
+
+.search-bar div {
+  align-self: center;
+}
+
+input[type='text'] {
+  display: block;
+  margin: 0 auto;
+  margin-top: 1%;
 }
 
 .two-buttons {
-  background-color: chocolate;
   flex: 1;
 }
 
 .blank-space {
-  background-color: darkgray;
   flex: 5;
 }
 
 .bottom-div {
-  background-color: darksalmon;
   flex: 1;
 }
 
@@ -106,4 +136,14 @@ a {
 
 #profile-logo:hover {
   cursor: pointer;
+}
+
+.search-icon {
+  position: absolute;
+  transform: scale(0.55);
+}
+
+.speaker-icon {
+  position: relative;
+  transform: scale(0.55);
 }
