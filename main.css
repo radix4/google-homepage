@@ -74,8 +74,10 @@ a {
   flex: 0.1;
   align-self: center;
   display: flex;
+  align-items: center;
   border-radius: 50px 50px;
   border: 1px #ccc solid;
+  height: 45px;
 }
 
 .search-bar form {
@@ -99,11 +101,26 @@ a {
 input[type='text'] {
   display: block;
   margin: 0 auto;
-  margin-top: 1%;
 }
 
 .two-buttons {
   flex: 1;
+  align-self: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 35%;
+}
+
+.two-buttons button {
+  border-style: none;
+  height: 35px;
+  width: 120px;
+  border-radius: 5px;
+}
+
+.two-buttons button:hover {
+  border: groove;
 }
 
 .blank-space {
