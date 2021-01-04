@@ -6,14 +6,14 @@ p,
   font-family: arial, sans-serif;
   font-size: small;
 }
-
+/* 
 div {
   border: 1px #ccc solid;
-}
+} */
 
 a {
   text-decoration: none;
-  color: #000;
+  color: rgb(75, 68, 68);
 }
 
 .main-div {
@@ -128,7 +128,49 @@ input[type='text'] {
 }
 
 .bottom-div {
+  background: #f2f2f2;
+  flex: 0.8;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.bottom-div .bottom-left {
   flex: 1;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.bottom-div .bottom-left a {
+  margin-left: 20px;
+}
+
+.bottom-div .bottom-left a:hover {
+  text-decoration: underline;
+}
+
+.bottom-div .bottom-middle {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.bottom-div .bottom-middle a:hover {
+  text-decoration: underline;
+}
+
+.bottom-div .bottom-right {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.bottom-div .bottom-right a {
+  margin-right: 20px;
+}
+
+.bottom-div .bottom-right a:hover {
+  text-decoration: underline;
 }
 
 .apps-logo:hover {
