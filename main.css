@@ -6,14 +6,18 @@ p,
   font-family: arial, sans-serif;
   font-size: small;
 }
-/* 
-div {
-  border: 1px #ccc solid;
-} */
 
 a {
   text-decoration: none;
   color: rgb(75, 68, 68);
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+img:hover {
+  cursor: pointer;
 }
 
 .main-div {
@@ -67,14 +71,15 @@ a {
 }
 
 .logo {
-  height: 100px;
-  width: 300px;
+  height: 90px;
+  width: 270px;
 }
 .search-bar {
   flex: 0.1;
   align-self: center;
   display: flex;
   align-items: center;
+  /* justify-content: center; */
   border-radius: 50px 50px;
   border: 1px #ccc solid;
   height: 45px;
@@ -84,13 +89,13 @@ a {
   position: relative;
   display: block;
   height: auto;
-  width: 600px;
+  width: 450px;
+  left: 30px;
 }
 
 .search-bar form input {
   align-self: center;
-  height: 75%;
-  width: 80%;
+  width: 90%;
   border: none;
 }
 
@@ -109,7 +114,7 @@ input[type='text'] {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 35%;
+  width: 250px;
 }
 
 .two-buttons button {
@@ -145,18 +150,15 @@ input[type='text'] {
   margin-left: 20px;
 }
 
-.bottom-div .bottom-left a:hover {
-  text-decoration: underline;
-}
-
 .bottom-div .bottom-middle {
   flex: 1;
   display: flex;
   justify-content: center;
 }
 
-.bottom-div .bottom-middle a:hover {
-  text-decoration: underline;
+.bottom-div .bottom-middle img {
+  width: 15px;
+  height: 15px;
 }
 
 .bottom-div .bottom-right {
@@ -167,14 +169,6 @@ input[type='text'] {
 
 .bottom-div .bottom-right a {
   margin-right: 20px;
-}
-
-.bottom-div .bottom-right a:hover {
-  text-decoration: underline;
-}
-
-.apps-logo:hover {
-  cursor: pointer;
 }
 
 .apps-logo {
@@ -193,7 +187,8 @@ input[type='text'] {
   border-radius: 50%;
 }
 
-#profile-logo:hover {
+#profile-logo:hover,
+.apps-logo:hover {
   cursor: pointer;
 }
 
